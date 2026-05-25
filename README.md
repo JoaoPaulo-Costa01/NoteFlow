@@ -53,6 +53,8 @@ O usuário pode criar, editar e organizar notas com suporte a tags, e contar com
 - **DTOs** para entrada e saída de dados, prevenindo vazamento de entidades internas
 - **BaseController** com extração do `UserId` via claims JWT
 
+### Uso de IA
+- Uso da Inteligência Artificial como aceleradora de engenharia, e não como muleta. O processo envolveu a criação de uma documentação customizada de Agent Skills (mapeando as regras e a arquitetura do NoteFlow) para alimentar e especializar a IA antes do desenvolvimento. Essa abordagem de engenharia de contexto e instruções precisas foi o segredo para otimizar o consumo de tokens, mitigar alucinações da ferramenta e garantir um código confiável e arquiteturalmente sólido.
 ---
 
 ## Rodando Localmente
