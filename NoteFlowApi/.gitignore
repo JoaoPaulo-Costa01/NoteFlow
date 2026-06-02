@@ -20,3 +20,8 @@ TestResults/
 coverage/
 .DS_Store
 .idea/
+
+Properties/PublishProfiles/
+*.pubxml
+*.pubxml.user
+*.PublishSettings

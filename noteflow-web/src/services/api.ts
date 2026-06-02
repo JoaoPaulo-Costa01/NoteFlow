@@ -1,10 +1,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://localhost:7098/api',
+  baseURL: 'https://noteflow-api.azurewebsites.net/api',
 });
 
-// Injeta o JWT em toda requisição automaticamente
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('noteflow_token');
   if (token) {
@@ -13,7 +12,6 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// Se o token expirou, limpa e manda para o login
 api.interceptors.response.use(
   (response) => response,
   (error) => {
